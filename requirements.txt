@@ -1,0 +1,4 @@
+loginform==1.2.0
+PyYAML==3.12
+Scrapy==1.4.0
+unittest-xml-reporting==2.1.0

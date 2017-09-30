@@ -1,0 +1,10 @@
+syntax: glob
+.idea
+*.pyc
+.venv
+build
+*.log
+*.json
+test-reports
+__pycache__
+.cache

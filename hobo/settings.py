@@ -1,0 +1,9 @@
+BOT_NAME = 'hobo'
+
+SPIDER_MODULES = ['hobo.spiders']
+NEWSPIDER_MODULE = 'hobo.spiders'
+
+FEED_FORMAT = 'json'
+AJAXCRAWL_ENABLED = True
+RETRY_ENABLED = False
+HTTPERROR_ALLOW_ALL = True
