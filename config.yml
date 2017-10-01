@@ -43,6 +43,3 @@ assertions:
       -
       - is not none
     description: Page title
-
-
-
