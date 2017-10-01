@@ -8,3 +8,5 @@ build
 test-reports
 __pycache__
 .cache
+.DS_Store
+
