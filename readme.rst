@@ -21,6 +21,8 @@ How to set up
 =============
 Change config.yml:
 
+.. code:: yaml
+
     site:
       url: http://example.com           # web application's url
       auth_path: /login/auth            # (optional) path to the authorization page
