@@ -1,0 +1,45 @@
+site:
+  url: http://example.com
+#  auth_path: /login/auth
+#  login: admin
+#  password: admin
+settings:
+  feed_uri: items.json
+  download_delay: 0.5
+  concurrent_requests: 3
+#  closespider_itemcount: 3
+rule:
+  deny:
+    - contacts
+    - form
+  tags:
+    - a
+    - area
+assertions:
+  -
+    key: status_code
+    attribute: status
+    matcher:
+      - equal
+      - 200
+    description: HTTP status code
+  -
+    key: content_type
+    attribute: headers
+    field: Content-Type
+    matcher:
+      - text/html
+      - in
+      -
+    description: Content type
+  -
+    key: title
+    attribute: text
+    selector:
+      by: xpath
+      path: //title
+      extract: first
+    matcher:
+      -
+      - is not none
+    description: Page title
