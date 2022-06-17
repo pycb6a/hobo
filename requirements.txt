@@ -1,4 +1,4 @@
 loginform==1.2.0
 PyYAML==5.4
-Scrapy==2.1.0
+Scrapy==2.6.1
 unittest-xml-reporting==3.0.2
